@@ -1,5 +1,13 @@
-import { Typography } from "@mui/material";
+import Link from "next/link"
+import styles from "@/app/page.module.css"
 
 export default function Header() {
-  return <div> NavBar </div>;
+  return (
+    <div className={styles.menu}>
+      <nav>
+        <Link href="/admin/colaborator">Colaborador</Link>
+        <Link href="/admin/project">Projeto</Link>
+      </nav>
+    </div>
+  )
 }

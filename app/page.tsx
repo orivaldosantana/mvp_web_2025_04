@@ -1,12 +1,9 @@
-import Typography from "@mui/material/Typography";
-
-import FormColaborador from "@/app/ui/forms/formcolaborator";
+import Typography from "@mui/material/Typography"
 
 export default function Home() {
   return (
     <div>
-      <Typography variant="h2"> Formulário Profissionais </Typography>
-      <FormColaborador />
+      <Typography variant="h2"> Página de Login </Typography>
     </div>
-  );
+  )
 }
