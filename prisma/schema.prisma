@@ -5,17 +5,18 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+  output        = "../app/generated/prisma"
 }
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db" 
+  url      = "file:./dev.db"
 }
 
-model Colaborator { 
-  id Int @default(autoincrement()) @id 
-  name String 
-  mat String
+model Colaborator {
+  id   Int    @id @default(autoincrement())
+  name String
+  mat  String
 }
